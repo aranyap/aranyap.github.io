@@ -10,23 +10,43 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   background-color: white;
-  min-height: 100px;
 }
 
 #logo-and-title {
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
+  justify-content: space-between;
+  /*flex-grow: 1;*/
+  align-items: center;
+  /*padding-left: 20px;*/
 }
 
-img {
-  padding: 20px;
+#logo {
+  padding: 15px 20px;
+}
+
+#title {
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 400;
 }
 
 #nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  padding-right: 15px;
 }
 
 section {
@@ -35,6 +55,35 @@ section {
   overflow: hidden;
   padding: 9%;
   min-height: 300px;
+}
+
+#intro-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin-left: 45%;
+  margin-right: 20%;
+  background-color: black;
+  padding: 30px 40px;
+}
+
+h2 {
+  font-size: 28px;
+  color: white;
+  padding-bottom: 18px;
+}
+
+#intro-box p {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.button {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #00d0ff;
+  padding: 12px;
+  margin-right: 75%;
 }
 
 .wrapper {
