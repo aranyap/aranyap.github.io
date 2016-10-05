@@ -1,0 +1,46 @@
+body {
+  font-family: 'Open Sans', sans-serif;;
+}
+
+#parent-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  min-height: 100px;
+}
+
+#logo-and-title {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+img {
+  padding: 20px;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  background: url(../images/media.png) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 9%;
+  min-height: 300px;
+}
+
+.wrapper {
+  background-color: purple;
+}
+
+footer {
+  background-color: green;
+}
