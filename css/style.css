@@ -92,7 +92,7 @@ h2 {
 #course-overview {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 4% 25%;
 }
 
@@ -137,7 +137,7 @@ h3 {
 #icon-wrapper {
   display: flex;
   flex-direction: row;
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 3% 25%;
 }
 
