@@ -1,5 +1,7 @@
 body {
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 #parent-container {
@@ -43,26 +45,27 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-right: 20px;
 }
 
 .nav-item {
-  padding-right: 15px;
+  padding-right: 20px;
+  font-size: 18px;
 }
 
 section {
-  background: url(../images/media.png) center center no-repeat;
+  background: url(../images/amdc.png) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   padding: 9%;
-  min-height: 300px;
 }
 
 #intro-box {
   display: flex;
   flex-direction: column;
+  /*background: url(../images/marble.jpg) center center no-repeat;*/
   border: 1px solid black;
-  margin-left: 45%;
-  margin-right: 20%;
+  margin-right: 65%;
   background-color: black;
   padding: 30px 40px;
 }
@@ -86,10 +89,77 @@ h2 {
   margin-right: 75%;
 }
 
-.wrapper {
-  background-color: purple;
+#course-overview {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  padding: 4% 25%;
+}
+
+#course-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 3%;
+
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 400;
+  padding-bottom: 22px;
+  padding-left: 3%;
+}
+
+#left-textbox {
+
+}
+
+#right-textbox {
+
+}
+
+.textbox p {
+  font-size: 18px;
+  line-height: 1.6em;
+  letter-spacing: 0.6px;
+
+}
+
+#icon-section {
+  background-color: rgba(245,244,233,1);
+}
+
+#icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  padding: 3% 25%;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 2%;
+}
+
+.icon-img {
+  margin: auto;
+  padding-bottom: 15px;
+
+}
+
+h4 {
+  font-weight: 600;
+  color: black;
+  text-align: center;
 }
 
 footer {
-  background-color: green;
+  background-color: rgba(224,242,243,1);
+
 }
