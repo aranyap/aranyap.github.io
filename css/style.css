@@ -92,8 +92,8 @@ h2 {
 #course-overview {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
-  padding: 4% 25%;
+  /*max-width: 1200px;*/
+  padding: 4% 20%;
 }
 
 #course-wrapper {
@@ -105,7 +105,6 @@ h2 {
   display: flex;
   flex-direction: column;
   padding: 0% 3%;
-
 }
 
 h3 {
@@ -115,19 +114,11 @@ h3 {
   padding-left: 3%;
 }
 
-#left-textbox {
-
-}
-
-#right-textbox {
-
-}
 
 .textbox p {
   font-size: 18px;
   line-height: 1.6em;
   letter-spacing: 0.6px;
-
 }
 
 #icon-section {
@@ -137,8 +128,8 @@ h3 {
 #icon-wrapper {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
-  padding: 3% 25%;
+  /*max-width: 1200px;*/
+  padding: 3% 15%;
 }
 
 .icon {
@@ -150,7 +141,6 @@ h3 {
 .icon-img {
   margin: auto;
   padding-bottom: 15px;
-
 }
 
 h4 {
@@ -159,7 +149,40 @@ h4 {
   text-align: center;
 }
 
+#testimonials-section {
+  display: flex;
+  flex-direction: column;
+  padding: 4% 20% 0% 20%;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 8%;
+}
+
+.testimonial-image-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#testimonial-text-right {
+  margin-left: 12%;
+  padding: 0% 5%;
+}
+
+#testimonial-text-left {
+  margin-right: 12%;
+  padding: 0% 5%;
+}
+
+.testimonial-text p {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6em;
+  letter-spacing: 0.5px;
+}
+
 footer {
   background-color: rgba(224,242,243,1);
-
 }
