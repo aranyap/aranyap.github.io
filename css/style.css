@@ -4,16 +4,11 @@ body {
   letter-spacing: 0.5px;
 }
 
-#parent-container {
-  display: flex;
-  flex-direction: column;
-}
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
   background-color: white;
 }
 
@@ -90,14 +85,25 @@ h2 {
   font-weight: 600;
 }
 
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
 #course-overview {
   display: flex;
   flex-direction: column;
-  /*max-width: 1200px;*/
-  padding: 4% 10%;
+  padding: 100px 0px;
 }
 
 #course-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#course-textbox {
   display: flex;
   flex-direction: row;
 }
@@ -124,13 +130,14 @@ h3 {
 
 #icon-section {
   background-color: rgba(245,244,233,1);
+  padding: 60px 0px;
 }
 
 #icon-wrapper {
   display: flex;
   flex-direction: row;
-  /*max-width: 1200px;*/
-  padding: 3% 6%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .icon {
@@ -159,7 +166,8 @@ h4 {
 .testimonial-wrapper {
   display: flex;
   flex-direction: row;
-  padding-bottom: 8%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .testimonial-image-wrapper {
@@ -186,4 +194,12 @@ h4 {
 
 footer {
   background-color: rgba(224,242,243,1);
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 5000px) {
+
+
+
 }
