@@ -8,6 +8,7 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  /* flex-grow: 2; */
   justify-content: space-between;
   background-color: white;
 }
@@ -15,10 +16,10 @@ header {
 #logo-and-title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  /*flex-grow: 1;*/
+  justify-content: space-around;
+  /* flex-grow: 1; */
   align-items: center;
-  /*padding-left: 20px;*/
+  /* padding-left: 20px; */
 }
 
 #logo {
@@ -40,13 +41,34 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-right: 20px;
+  min-width: 500px;
+  padding-right: 30px;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;*/
 }
 
 .nav-item {
-  padding-right: 20px;
-  font-size: 18px;
+  /*padding-right: 20px;*/
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px;
+  cursor: pointer;
+  border-bottom: solid transparent 3px;
 }
+
+.nav-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-item.active {
+  padding-bottom: 10px;
+  border-color: red;
+}
+
 
 section {
   background: url(../images/amdc.png) center center no-repeat;
@@ -62,18 +84,20 @@ section {
   border: 1px solid black;
   margin-right: 45%;
   background-color: black;
-  padding: 30px 40px;
+  padding: 30px 30px;
 }
 
 h2 {
   font-size: 28px;
   color: white;
   padding-bottom: 18px;
+  font-weight: 600;
 }
 
 #intro-box p {
   color: white;
   padding-bottom: 20px;
+  line-height: 1.3em;
 }
 
 .button {
@@ -93,7 +117,7 @@ h2 {
 #course-overview {
   display: flex;
   flex-direction: column;
-  padding: 100px 0px;
+  padding: 75px 0px;
 }
 
 #course-wrapper {
@@ -190,6 +214,59 @@ h4 {
   font-style: italic;
   line-height: 1.6em;
   letter-spacing: 0.5px;
+}
+
+#highlights-section {
+  background-color: rgb(35,35,35);
+}
+
+#highlights-first-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#highlights-second-wrapper {
+  padding: 4% 0%;
+}
+
+
+#highlights-second-wrapper h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  padding: 0px;
+}
+
+.highlight h4 {
+  text-align: left;
+}
+
+#highlights-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+}
+
+.highlight {
+  padding-right: 55px;
+}
+
+.highlight h4 {
+  color: white;
+  font-weight: 400;
+}
+
+.highlight-img {
+  padding-bottom: 23px;
+}
+
+#highlights-box {
+  background: url(../images/carolin.png) no-repeat center center;
+  background: cover;
+  min-width: 500px;
+  min-height: 340px;
 }
 
 footer {
