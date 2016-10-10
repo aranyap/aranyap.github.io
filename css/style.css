@@ -107,7 +107,7 @@ h2 {
 #course-overview {
   display: flex;
   flex-direction: column;
-  padding: 50px 0px;
+  padding: 60px 0px;
 }
 
 #course-wrapper {
@@ -179,7 +179,7 @@ h4 {
 }
 
 #three-column-section {
-  padding: 50px 0px;
+  padding: 60px 0px;
 
 }
 
@@ -230,7 +230,7 @@ h4 {
 }
 
 #highlights-second-wrapper {
-  padding: 4% 0%;
+  padding: 60px 0px;
 }
 
 
