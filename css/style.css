@@ -1,14 +1,16 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  letter-spacing: 0.5px;
+  line-height: 1.6em;
 }
 
+p {
+  letter-spacing: 0.6px;
+}
 
 header {
   display: flex;
   flex-direction: row;
-  /* flex-grow: 2; */
   justify-content: space-between;
   background-color: white;
 }
@@ -17,9 +19,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* flex-grow: 1; */
   align-items: center;
-  /* padding-left: 20px; */
 }
 
 #logo {
@@ -34,6 +34,7 @@ header {
 h1 {
   font-size: 25px;
   font-weight: 400;
+  letter-spacing: 0px;
 }
 
 #nav {
@@ -43,15 +44,9 @@ h1 {
   align-items: center;
   min-width: 500px;
   padding-right: 30px;
-  /*display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 20px;*/
 }
 
 .nav-item {
-  /*padding-right: 20px;*/
   font-size: 16px;
   font-weight: 600;
   border-bottom: 1px;
@@ -66,9 +61,8 @@ h1 {
 
 .nav-item.active {
   padding-bottom: 10px;
-  border-color: red;
+  border-color: #dc2d27;
 }
-
 
 section {
   background: url(../images/amdc.png) center center no-repeat;
@@ -80,18 +74,18 @@ section {
 #intro-box {
   display: flex;
   flex-direction: column;
-  /*background: url(../images/marble.jpg) center center no-repeat;*/
   border: 1px solid black;
-  margin-right: 45%;
   background-color: black;
   padding: 30px 30px;
+  max-width: 600px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 30px;
   color: white;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 #intro-box p {
@@ -104,20 +98,16 @@ h2 {
   border: 1px solid black;
   border-radius: 10px;
   background-color: #00d0ff;
-  padding: 12px;
-  margin-right: 74%;
-  font-weight: 600;
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
+  padding: 10px 25px;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 #course-overview {
   display: flex;
   flex-direction: column;
-  padding: 75px 0px;
+  padding: 50px 0px;
 }
 
 #course-wrapper {
@@ -135,26 +125,26 @@ h2 {
 .textbox {
   display: flex;
   flex-direction: column;
-  padding: 0% 3%;
+}
+
+#left-textbox {
+  padding-right: 50px;
 }
 
 h3 {
-  font-size: 35px;
-  font-weight: 400;
-  padding-bottom: 22px;
-  padding-left: 3%;
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 35px;
 }
 
 
 .textbox p {
   font-size: 18px;
-  line-height: 1.6em;
-  letter-spacing: 0.6px;
 }
 
 #icon-section {
   background-color: rgba(245,244,233,1);
-  padding: 60px 0px;
+  padding: 50px 0px;
 }
 
 #icon-wrapper {
@@ -175,49 +165,61 @@ h3 {
   padding-bottom: 15px;
 }
 
+.icon h4 {
+  line-height: 1.1em;
+  letter-spacing: 0px;
+}
+
 h4 {
   font-weight: 600;
   color: black;
   text-align: center;
+  letter-spacing: 0px;
+  line-height: 1.3em;
 }
 
-#testimonials-section {
+#three-column-section {
+  padding: 50px 0px;
+
+}
+
+#three-column-first-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 5% 10% 5% 10%;
-}
-
-.testimonial-wrapper {
-  display: flex;
-  flex-direction: row;
   max-width: 1200px;
   margin: auto;
 }
 
-.testimonial-image-wrapper {
+#three-column-second-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-#testimonial-text-right {
-  margin-left: 5%;
-  padding: 2.5% 5%;
+.three-column-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
 }
 
-#testimonial-text-left {
-  margin-right: 5%;
-  padding: 2.5% 5%;
+.three-column-text {
+  padding: 15px 17px 0px 0px;
 }
 
-.testimonial-text p {
+.three-column-text h4 {
+  text-align: left;
+  padding-bottom: 10px;
   font-size: 18px;
-  font-style: italic;
-  line-height: 1.6em;
-  letter-spacing: 0.5px;
+}
+
+.three-column-text p {
+  text-align: left;
+  font-weight: 300;
+  line-height: 1.2em;
 }
 
 #highlights-section {
-  background-color: rgb(35,35,35);
+  background-color: rgb(49,49,49);
 }
 
 #highlights-first-wrapper {
@@ -233,14 +235,8 @@ h4 {
 
 
 #highlights-second-wrapper h3 {
-  font-size: 36px;
-  font-weight: 600;
   color: white;
   padding: 0px;
-}
-
-.highlight h4 {
-  text-align: left;
 }
 
 #highlights-content {
@@ -256,6 +252,8 @@ h4 {
 .highlight h4 {
   color: white;
   font-weight: 400;
+  text-align: left;
+  line-height: 1.2em;
 }
 
 .highlight-img {
@@ -269,9 +267,60 @@ h4 {
   min-height: 340px;
 }
 
-footer {
-  background-color: rgba(224,242,243,1);
+#testimonials-section {
+  background-color: rgba(245,244,233,1);
+  padding: 25px 0px;
 }
+
+.testimonials-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+.testimonials-wrapper img {
+  /*margin: 0px 50px;*/
+}
+
+.testimonials-text {
+  background-color: white;
+  margin: 50px 100px;
+  padding: 40px;
+}
+
+.testimonials-name {
+  font-weight: 600;
+  letter-spacing: 0px;
+  padding-top: 10px;
+}
+
+.testimonials-name.eva {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #dc2d27;
+  margin-right: 78%;
+}
+
+.testimonials-name.ishaku {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #dc2d27;
+  margin-right: 73%;
+}
+
+footer {
+  background-color: rgb(49, 49, 49);
+  padding: 50px 0px;
+}
+
+#footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
 
 /*RESPONSIVE*/
 
