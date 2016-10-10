@@ -104,6 +104,11 @@ h2 {
   font-size: 18px;
 }
 
+.button a {
+  color: black;
+  text-decoration: none;
+}
+
 #course-overview {
   display: flex;
   flex-direction: column;
