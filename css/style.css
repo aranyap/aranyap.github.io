@@ -326,10 +326,20 @@ footer {
   align-items: center;
 }
 
+form {
+  width: 500px;
+}
+
+label {
+  color: white;
+}
+
+
+
 
 /*RESPONSIVE*/
 
-@media screen and (min-width: 5000px) {
+@media screen and (max-width: 1200px) {
 
 
 
