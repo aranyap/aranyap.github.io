@@ -2,6 +2,8 @@ $(document).ready(start);
 
 function start() {
   $('.nav-item').hover(becomeActive, stopBeingActive);
+  $('.slide-menu-item a').hover(becomeActive, stopBeingActive);
+  $('#hamburger-btn').click(slideMenutoggle);
 }
 
 function becomeActive() {
@@ -11,17 +13,8 @@ function becomeActive() {
 function stopBeingActive() {
   $(this).removeClass('active');
 }
-//
-// function start() {
-//   $('.nav-button').hover(becomeActive, stopBeingActive);
-//   $('.black-box').hover(becomeActive, stopBeingActive);
-// }
-//
-// function becomeActive() {
-//   $(this).addClass('active');
-//   $(this).siblings().addClass('sodfj')
-// }
-//
-// function stopBeingActive() {
-//   $(this).removeClass('active');
-// }
+
+function slideMenutoggle() {
+  $('.slide-menu').toggleClass('open');
+  $('#hamburger-btn').toggleClass('open');
+}

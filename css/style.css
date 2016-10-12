@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  padding: 0;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -62,6 +67,14 @@ h1 {
 .nav-item.active {
   padding-bottom: 10px;
   border-color: #dc2d27;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+.slide-menu {
+  display: none;
 }
 
 section {
@@ -204,7 +217,8 @@ h4 {
 .three-column-box {
   display: flex;
   flex-direction: column;
-  padding: 0px 10px;
+  max-width: 392px;
+  padding: 0px 20px 0px 0px;
 }
 
 .three-column-text {
@@ -221,6 +235,10 @@ h4 {
   text-align: left;
   font-weight: 300;
   line-height: 1.2em;
+}
+
+.three-column-box.third {
+  padding-right: 0px;
 }
 
 #highlights-section {
@@ -304,13 +322,13 @@ h4 {
 .testimonials-name.eva {
   padding-bottom: 8px;
   border-bottom: 2px solid #dc2d27;
-  margin-right: 78%;
+  margin-right: 515px;
 }
 
 .testimonials-name.ishaku {
   padding-bottom: 8px;
   border-bottom: 2px solid #dc2d27;
-  margin-right: 73%;
+  margin-right: 490px;
 }
 
 footer {
@@ -326,8 +344,16 @@ footer {
   align-items: center;
 }
 
-form {
-  width: 500px;
+.pure-g {
+  padding-left: 65px;
+}
+
+.pure-form .pure-input-1-2 {
+  width: 60%;
+}
+
+.pure-button {
+  margin: 33px 0px;
 }
 
 label {
@@ -339,8 +365,231 @@ label {
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) and (min-width: 1080px) {
 
+  h3 {
+    line-height: 1.1em;
+  }
+
+  #course-overview {
+    padding: 60px 60px;
+  }
+
+  #icon-section {
+    padding: 50px 30px;
+  }
+
+  #highlights-second-wrapper {
+    padding: 45px 50px;
+  }
+
+  #highlights-box {
+    width: 100%;
+    min-width: 0px;
+    min-height: 0px;
+  }
+
+  #three-column-first-wrapper {
+    padding: 0px 30px;
+  }
+
+  .three-column-box {
+    width: 30%;
+  }
+
+  #testimonials-section {
+    padding: 25px 60px;
+  }
+
+  .testimonials-text.eva {
+    margin: 50px 20px 50px 80px;
+  }
+
+  .testimonials-text.ishaku {
+    margin: 50px 80px 50px 20px;
+  }
+
+  .testimonials-name.eva {
+    border: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    padding-top: 22px;
+  }
+
+  .testimonials-name.ishaku {
+    border: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    padding-top: 22px;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 600px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #course-overview {
+    padding: 50px 30px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 30px;
+  }
+
+  .textbox p {
+    font-size: 14px;
+  }
+
+  .icon h4 {
+    font-size: 14px;
+  }
+
+  #three-column-section {
+    padding: 45px 20px;
+  }
+
+  .three-column-box {
+    max-width: 300px;
+    padding: 0px;
+  }
+
+  .three-column-box.third {
+    padding: 0px;
+
+  }
+  .three-column-box img {
+    width: 90%;
+  }
+
+  .three-column-text h4 {
+    font-size: 15px;
+  }
+
+  .three-column-text p {
+    font-size: 14px;
+  }
+
+  #highlights-second-wrapper {
+    padding: 45px 30px;
+  }
+
+  #highlights-second-wrapper h3 {
+    line-height: 1.1em;
+  }
+
+  .highlight {
+    padding-right: 25px;
+  }
+
+  .highlight h4 {
+    font-size: 15px;
+  }
+
+  #highlights-box {
+    width: 115%;
+    min-width: 0px;
+    min-height: 0px;
+  }
+
+
+  .testimonials-wrapper {
+    padding: 0px 30px;
+  }
+
+  .testimonials-wrapper img {
+    width: 150px;
+  }
+
+  .testimonials-text {
+    font-size: 14px;
+  }
+
+  .testimonials-text.eva {
+    margin: 20px 0px 20px 30px;
+    padding: 30px;
+  }
+
+  .testimonials-text.ishaku {
+    margin: 20px 30px 20px 0px;
+    padding: 30px;
+  }
+
+  .testimonials-name.eva {
+    border: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    padding-top: 22px;
+  }
+
+  .testimonials-name.ishaku {
+    border: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    padding-top: 22px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  #nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: block;
+    margin: 35px 55px;
+    font-size: 25px;
+  }
+
+  #hamburger-btn {
+    position: absolute;
+    z-index: 20;
+  }
+
+  #hamburger-btn.open {
+    color: white;
+  }
+
+  .slide-menu {
+    display: block;
+    background-color: rgb(148,150,150);
+    color: white;
+    width: 35%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    right: -35%;
+    transition: all 1s;
+  }
+
+  .slide-menu.open {
+    right: 0;
+    transition: all 1s;
+  }
+
+  .slide-menu-item {
+    padding: 40px 0px 0px 40px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .slide-menu-item a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px;
+    cursor: pointer;
+    border-bottom: solid transparent 3px;
+  }
+
+  .slide-menu-item a.active {
+    padding-bottom: 10px;
+    border-color: #dc2d27;
+  }
 
 
 }

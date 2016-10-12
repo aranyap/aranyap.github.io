@@ -39,6 +39,19 @@
         <div class='nav-item'><a href='http://www.swinburne.edu.au/business-partnerships'>PARTNERSHIPS</a></div>
         <div class='nav-item'><a href='http://www.swinburne.edu.au/news'>NEWS</a></div>
       </div>
+
+      <div class='slide-menu'>
+        <div class='slide-menu-item'><a href='http://www.swinburne.edu.au/study'>STUDY WITH US</a></div>
+        <div class='slide-menu-item'><a href='http://www.swinburne.edu.au/research'>RESEARCH</a></div>
+        <div class='slide-menu-item'><a href='http://www.swinburne.edu.au/business-partnerships'>PARTNERSHIPS</a></div>
+        <div class='slide-menu-item'><a href='http://www.swinburne.edu.au/news'>NEWS</a></div>
+
+      </div>
+
+      <div id='mobile-nav'>
+        <i id='hamburger-btn' class='fa fa-bars' aria-hidden='true'></i>
+      </div>
+
     </header>
 
     <!-- hero section -->
@@ -48,7 +61,6 @@
         <h2>Master of Media and Communications</h2>
         <p>For more than 100 years, Swinburne has been committed to innovative education, producing outstanding graduates and delivering enduring outcomes for our industry partners.</p>
         <div id='learn-more' class='button'><a href='http://www.swinburne.edu.au/study/find-a-course/media-communications/'>Learn more</a></div>
-
       </div>
 
     </section>
@@ -129,7 +141,7 @@
             </div>
           </div>
 
-          <div class='three-column-box'>
+          <div class='three-column-box third'>
             <img src='images/one-on-one.png' alt='carolin' />
             <div class='three-column-text'>
               <h4>Develop entrepreneurship- and innovation-focused thinking</h4>
@@ -186,14 +198,14 @@
           <img src='images/eva-circle.png' alt='eva'/>
         </div>
 
-        <div class='testimonials-text'>
+        <div class='testimonials-text eva'>
           <p>In my last year of studying at Swinburne, I went on the 'Business in America' study tour, led by the MBA Course Coordinator, which was a highlight in my studies and career. Being able to visit New York, Boston and San Francisco and observe the work culture of leading multinational corporations was a once-in-a-lifetime opportunity that really helped me to enhance my business thinking and, eventually, my career.</p>
           <p class='testimonials-name eva'>Eva Chiu, Malaysia</p>
         </div>
       </div>
 
       <div class='testimonials-wrapper'>
-        <div class='testimonials-text'>
+        <div class='testimonials-text ishaku'>
           <p>Swinburne University’s MBA (International) has been developed to fit in the context of 21st century business practices. Understanding how to deal with colleagues in shifting environments and managing remote workforces is now a big part of most workplaces. Professionals today need those skills if they want to take on leadership positions in the future. Our MBA (International) prepares students for these positions.</p>
           <p class='testimonials-name ishaku'>Ishaku Haruna, Nigeria</p>
         </div>
@@ -213,41 +225,43 @@
           <fieldset>
             <legend></legend>
             <div class="pure-g">
-              <div class="pure-u-1-2 pure-u-md-1-3">
-                <label for="first-name">First Name</label>
-                <input id="first-name" class="pure-u-1-2" type="text">
+              <div class='form-wrapper'>
+                <div class="pure-u-1 pure-u-md-1-3">
+                  <label for="first-name">First Name</label>
+                  <input id="first-name" class="pure-u-23-24" type="text">
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-2">
+                  <label for="last-name">Last Name</label>
+                  <input id="last-name" class="pure-u-23-24" type="text">
+                </div>
               </div>
 
-              <div class="pure-u-1-2 pure-u-md-1-2">
-                <label for="last-name">Last Name</label>
-                <input id="last-name" class="pure-u-1-2" type="text">
+              <div class='form-wrapper'>
+                <div class="pure-u-1 pure-u-md-1-3">
+                  <label for="email">Email</label>
+                  <input id="email" class="pure-u-23-24" type="text">
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-2">
+                  <label for="nationality">Nationality</label>
+                  <input id="nationality" class="pure-u-23-24" type="text">
+                </div>
               </div>
 
-              <div class="pure-u-1 pure-u-md-1-3">
-                <label for="email">E-Mail</label>
-                <input id="email" class="pure-u-23-24" type="email" required>
+              <div class='form-wrapper'>
+                <div class="pure-u-1 pure-u-md-1-3">
+                  <label for="intake">Expected Start Date</label>
+                  <select id="intake" class="pure-input-23-24">
+                      <option>Select</option>
+                      <option>July 2017</option>
+                      <option>February 2018</option>
+                  </select>
+                </div>
+                <button type="submit" class="pure-button pure-button-primary">Submit</button
               </div>
 
-              <div class="pure-u-1 pure-u-md-1-3">
-                <label for="nationality">Nationality</label>
-                <input id="nationality" class="pure-u-23-24" type="text">
-              </div>
 
-              <div class="pure-u-1 pure-u-md-1-3">
-                <label for="intake">Expected Start Date</label>
-                <select id="intake" class="pure-input-1-2">
-                    <option>Select</option>
-                    <option>July 2017</option>
-                    <option>February 2018</option>
-                </select>
-              </div>
-            </div>
-
-            <label for="terms" class="pure-checkbox">
-              <input id="terms" type="checkbox"> I've read the terms and conditions
-            </label>
-
-            <button type="submit" class="pure-button pure-button-primary">Submit</button>
           </fieldset>
         </form>
       </div>
