@@ -101,6 +101,7 @@ h2 {
   padding-bottom: 20px;
   font-weight: 600;
   letter-spacing: 0.2px;
+  line-height: 1.2em;
 }
 
 #intro-box p {
@@ -325,13 +326,15 @@ h4 {
 .testimonials-name.eva {
   padding-bottom: 8px;
   border-bottom: 2px solid #dc2d27;
-  margin-right: 515px;
+  display: inline-block;
+  /*margin-right: 515px;*/
 }
 
 .testimonials-name.ishaku {
   padding-bottom: 8px;
   border-bottom: 2px solid #dc2d27;
-  margin-right: 490px;
+  display: inline-block;
+  /*margin-right: 490px;*/
 }
 
 footer {
@@ -361,6 +364,15 @@ footer {
 
 label {
   color: white;
+}
+
+input.error {
+	border: 2px solid red;
+}
+
+.error-msg {
+	color: red;
+	display: none;
 }
 
 
@@ -535,6 +547,16 @@ label {
     padding-top: 22px;
   }
 
+  #footer-wrapper h2 {
+    text-align: center;
+    padding-bottom: 50px;
+    line-height: 1.3em;
+  }
+
+  form {
+    padding-left: 50px;
+  }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -562,12 +584,12 @@ label {
     display: block;
     background-color: rgb(148,150,150);
     color: white;
-    width: 35%;
+    width: 45%;
     /*height: 30%;*/
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     position: absolute;
     top: 0;
-    right: -35%;
+    right: -45%;
     transition: all 1s;
   }
 
@@ -594,6 +616,204 @@ label {
     padding-bottom: 10px;
     border-color: #dc2d27;
   }
+}
 
+@media screen and (max-width: 599px) {
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #intro-box p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .button {
+    margin: auto;
+  }
+
+  .slide-menu-item {
+    padding: 20% 10% 5% 10%;
+  }
+
+  #course-overview {
+    padding: 35px 30px;
+  }
+
+  h3 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2em;
+  }
+
+  #left-textbox {
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  #right-textbox {
+    display: none;
+  }
+
+  #icon-wrapper {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .icon {
+    padding-bottom: 50px;
+  }
+
+  .icon.fourth {
+    padding-bottom: 0px;
+  }
+
+  #three-column-section {
+    padding: 45px 30px;
+  }
+
+  #three-column-second-wrapper {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .three-column-box {
+    padding: 0px 0px 35px 0px;
+  }
+
+  .three-column-text h4 {
+    text-align: center;
+  }
+
+  .three-column-text p {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid grey;
+  }
+
+  #highlights-second-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 45px 30px;
+  }
+
+  #highlights-content {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .highlight {
+    padding: 0px 0px 35px 0px;
+  }
+
+  .highlight.third {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .highlight-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight h4 {
+    text-align: center;
+  }
+
+  #highlights-box {
+    display: none;
+  }
+
+  #testimonials-section {
+    padding: 45px 20px;
+  }
+
+  .testimonials-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+ }
+
+ .testimonials-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 50px;
+    padding: 40px;
+ }
+
+
+ .testimonials-text p {
+  text-align: center;
+ }
+
+ .testimonials-name {
+  text-align: center;
+  margin: 0px 0%;
+ }
+
+ #footer-wrapper {
+  display: flex;
+  flex-direction: column;
+ }
+
+ #footer-wrapper h2 {
+   font-size: 25px;
+ }
+
+ form {
+  padding-left: 6%;
+  padding-right: 12%;
+ }
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+
+  #title {
+    display: none;
+  }
+
+  .slide-menu {
+    display: block;
+    background-color: rgb(148,150,150);
+    color: white;
+    width: 80%;
+    /*height: 30%;*/
+    padding-bottom: 40px;
+    position: absolute;
+    top: 0;
+    right: -80%;
+    transition: all 1s;
+  }
+
+  .slide-menu-item {
+    padding: 20% 10% 5% 10%;
+  }
+
+  .three-column-box {
+    max-width: 300px;
+  }
+
+  /*#footer-wrapper {
+    padding: 0px 15px;
+  }
+
+  #footer-wrapper h2 {
+    font-size: 20px;
+  }*/
+
+  form {
+    padding-left: 4%;
+    padding-right: 20%;
+  }
 
 }
