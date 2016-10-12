@@ -4,8 +4,8 @@ function start() {
   $('.nav-item').hover(becomeActive, stopBeingActive);
   $('.slide-menu-item a').hover(becomeActive, stopBeingActive);
   $('#hamburger-btn').click(slideMenutoggle);
-  $('.pure-form').submit(validate);
-  $('#firstName').blur(runFirstNameValidation);
+  $('#form').submit(validate);
+  $('#email').focus(runFirstNameValidation);
 }
 
 function becomeActive() {
@@ -22,23 +22,24 @@ function slideMenutoggle() {
 }
 
 function validate(e) {
-	if(firstNameValid() != true) {
-		firstNameError();
-	}
-	if(lastNameValid() != true) {
-		lastNameError();
-	}
-	if(firstNameValid() && lastNameValid()) {
-		alert('Thanks for entering!');
-	} else {
+  if(validateEmail($('#email').val())) {
+    // Valid email
+  } else {
+    // Invalid email
+  }
 	e.preventDefault();
-	}
+  alert('working');
 }
 
 function runFirstNameValidation() {
 	if(firstNameValid()) {
 		firstNameClearError();
 	}
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
 }
 
 
