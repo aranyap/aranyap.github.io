@@ -632,6 +632,7 @@ input.error {
 
   .button {
     margin: auto;
+    text-align: center;
   }
 
   .slide-menu-item {
