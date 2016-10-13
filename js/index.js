@@ -31,35 +31,35 @@ function validate(e) {
   alert('working');
 }
 
-function runFirstNameValidation() {
-	if(firstNameValid()) {
-		firstNameClearError();
-	}
-}
+// function runFirstNameValidation() {
+// 	if(firstNameValid()) {
+// 		firstNameClearError();
+// 	}
+// }
 
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
 
-
-function firstNameError() {
-	$('#firstName').addClass('error');
-	$('#firstName').siblings('.error-msg').show();
-}
-
-function firstNameError() {
-	$('#firstName').removeClass('error');
-	// $('#firstName').siblings('.error-msg').hide();
-}
-
-
-function firstNameValid() {
-	var firstName = $('#firstName').val();
-	return firstName.length > 0
-}
-
-function lastNameValid() {
-	var lastName = $('#lastName').val();
-	return lastName.length > 0
-}
+//
+// function firstNameError() {
+// 	$('#firstName').addClass('error');
+// 	$('#firstName').siblings('.error-msg').show();
+// }
+//
+// function firstNameError() {
+// 	$('#firstName').removeClass('error');
+// 	// $('#firstName').siblings('.error-msg').hide();
+// }
+//
+//
+// function firstNameValid() {
+// 	var firstName = $('#firstName').val();
+// 	return firstName.length > 0
+// }
+//
+// function lastNameValid() {
+// 	var lastName = $('#lastName').val();
+// 	return lastName.length > 0
+// }
