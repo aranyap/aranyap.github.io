@@ -8,6 +8,7 @@ function start() {
   $('#email').focus(runFirstNameValidation);
 }
 
+
 function becomeActive() {
   $(this).addClass('active');
 }
